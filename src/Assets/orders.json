@@ -1,0 +1,52 @@
+[
+	{
+		"ID": 10271,
+		"birthDate": "1996-08-01 00:00:00.000",
+		"userName": "Mahmoud",
+		"salary": 7000,
+		"email": "mahmoud@gmail.com",
+		"mobile": "012304058",
+		"address": "Split Rail Beer & Kafr boleen",
+		"rating": 5
+	},
+	{
+		"ID": 10266,
+		"birthDate": "1996-07-26 00:00:00.000",
+		"userName": "Yomna",
+		"salary": 1800,
+		"email": "yomna@gmail.com",
+		"mobile": "01334558",
+		"address": "Wartian Herkku",
+		"rating": 3
+	},
+	{
+		"ID": 10279,
+		"birthDate": "1996-08-13 00:00:00.000",
+		"userName": "John",
+		"salary": 2700,
+		"email": "john@gmail.com",
+		"mobile": "01145678",
+		"address": "Lehmanns Marktstand",
+		"rating": 4
+	},
+	{
+		"ID": 10292,
+		"birthDate": "1996-08-28 00:00:00.000",
+		"userName": "Jennifer",
+		"salary": 3000,
+		"email": "jennifer@gmail.com",
+		"mobile": "016784058",
+		"address": "Tradiçao Hipermercados",
+		"rating": 1
+	},
+	{
+		"ID": 10295,
+		"birthDate": "1996-09-02 00:00:00.000",
+		"userName": "Maxilian",
+		"salary": 5800,
+		"email": "max@gmail.com",
+		"mobile": "015674058",
+		"address": "Vins et alcools Chevalier",
+		"rating": 2
+	}
+]

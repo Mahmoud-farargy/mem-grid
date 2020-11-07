@@ -1,0 +1,204 @@
+/* ----------Import external files-------------- */
+    @import url("./fonts//fonts.css");
+/* ----x------Import external files-------x------- */
+* {
+    margin:0;
+    box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    width:100%;
+}
+
+body{
+    width:100%;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:18px;
+    color: var(--font-black);
+}
+/* --------------Global classes------------------ */
+.disabled{
+    opacity: 0.5;
+    cursor:not-allowed;
+}
+ul{
+    list-style: none;
+}
+:root{
+    /* paddings */
+    --padding-top: 55px;
+    --padding-bottom: 30px;
+    --padding-sides: 10vw;
+    /* colors */
+    --primary-clr:#ff6358;
+    --dusty-rose: #DCAE96;
+    --gray: #dbdbdb;
+    --light-gray:#fafafa;
+    --light-black: rgb(38, 38, 38);
+    --second-gray:#8e8e8e;
+    --font-black: #262626;
+    --main-black: #363636;
+    --main-border:  1px solid var(--gray);
+    /* transitions */
+    --mild-transition: all 0.2s ease;
+    /* fonts */
+    --logo-font: "billabong"
+}
+/* Fade effect */
+  .fade-enter{
+    opacity: 0;
+  }
+  .fade-enter-active{    
+      animation: fade-in .3s linear forwards;  
+  }
+  .fade-leave-active{
+    animation: fade-out .3s linear forwards;
+  }
+  @keyframes fade-in{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+@keyframes fade-out{
+    from{
+        opacity:1;
+    }
+    to{
+        opacity:0;
+    }
+}
+  /*---xx---*/
+a:visited{
+   color:#00376b;
+}
+
+.flex-row{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display:flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items:stretch;
+    align-items:stretch;
+    flex-shrink: 0;
+    flex-direction: row;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+.flex-column{
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display:flex;
+    flex-direction: column;
+}
+
+.main--comp{
+    padding:
+    var(--padding-top)
+    var(--padding-sides)
+    var(--padding-bottom)
+    var(--padding-sides);
+    min-height:100vh;
+    height:100%;
+    max-width:1350px;
+}
+.display__type{
+    text-transform: capitalize;
+    font-size:14px;
+    font-weight: 600;
+    margin-bottom:3px;
+}
+/* .backdrop */
+/* -------x-------Global classes-------x----------- */
+::selection{
+    background-color:var(--primary-clr);
+    color:#fff;
+    text-shadow:none;
+}
+::-moz-selection{
+    background-color:var(--primary-clr);
+    color:#fff;
+    text-shadow:none;
+}
+.sticky--nav{
+    align-items:center;
+    position: sticky;
+    top:50px;
+    left:0;
+    z-index:150;
+    width:100%;
+    height:40px;
+    padding:5px 20px;
+    background-color: rgb(255, 255, 255,0.9);
+    filter: saturate(180px) blur(20px);
+}
+.nav--directions{
+    max-width:130px;
+    text-align:center;
+}
+.nav__directions__ico{
+    padding:2px;
+    margin-right:15px;
+    color:rgb(92, 92, 92) !important;
+    cursor:pointer;
+    font-size: 26px !important;
+}
+.coll--title{
+     text-align:center;
+     width:100%;
+     margin-top:8px;
+}
+.coll__title{
+   
+    text-transform: capitalize;
+    font-size:15px;
+    font-weight:700;
+}
+.main--footer{
+    padding:12px;
+    background-color:#313131;
+    width:100%;
+    /* border-bottom:4px solid rgb(61, 61, 61); */
+}
+.main--footer .copyright{
+    text-align:center;
+    color:rgb(196, 196, 196);
+    font-size:11.5px;
+    font-weight:600;
+    margin:0;
+    padding:0;
+}
+.main--footer p.copyright a{
+    color:var(--dusty-rose);
+    font-size:12px;
+    font-weight:600;
+    transition: color 0.3s linear;
+}
+.main--footer p.copyright a:hover, #header.header--logo h1:hover{
+    color:rgb(255, 163, 113);
+    text-decoration: none;
+}
+/*------ Media 670px or less----- */
+
+@media only screen and (max-width:670px){
+    .main--comp{
+        padding:50px 12px 30px 12px;
+    }
+}
+
+/* ------x-- Media 670px or less--x---- */
+
+/*------ Media 930px or less----- */
+/* @media only screen and (max-width:930px){
+    .main--comp{
+        padding:0;
+    }
+} */
+/*---x--- Media 930px or less---x-- */

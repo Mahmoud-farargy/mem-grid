@@ -1,0 +1,5 @@
+/* Logo font style*/
+@font-face{
+    font-family: billabong;
+    src: url("./Billabong.ttf");
+}
